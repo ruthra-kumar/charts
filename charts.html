@@ -1,0 +1,59 @@
+<html>
+<title>charts practice</title>
+
+<style type="text/css">
+#chart
+{
+	height:	300px;
+	width:	500px;
+}
+
+.label
+{
+	font-size:11px;
+	font-family:"Roboto-Regular","arial";
+}
+
+.path
+{
+	fill: none;
+	stroke: #aaaaff;
+	stroke-width:1px;
+}
+
+svg
+{
+
+	margin: 15%;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+.lines
+{
+	fill:none;
+	stroke:#f1f1f1;
+	stroke-width: 1px;
+}
+
+</style>
+
+
+<script language="Javascript" src="./charts_files/graph.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="chart">
+<?xml version="1.0"?>
+<svg class="graph" id="graph" width="843" height="350" viewport="0 0 843 350" >
+ 
+ <g id="x-tick" class="x-tick">
+ </g>
+
+ <g id="y-tick" class="y-tick">
+ </g>
+</svg>
+
+Principle: 2500 - 40000 <input type="range" id="principle" min="2500" max="40000" onmousemove="javascript:createGraph(); document.getElementById('p_val').innerHTML = this.value;"> <div id="p_val" ></div><br>
+Interest: 5 - 20 <input type="range" id="interest" min="5" max="20" onmousemove="javascript:createGraph(); document.getElementById('i_val').innerHTML = this.value;"> <div id="i_val"></div> <br>
+</div>
+
+</body></html>
